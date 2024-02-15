@@ -1,0 +1,17 @@
+name: diff-am
+channels:
+  - nvidia
+  - pytorch
+  - conda-forge
+dependencies:
+  - nvidia::cudatoolkit =11.7
+  - python >=3.10,<3.11
+  - numba
+  - pytorch::pytorch ==1.13.1
+  - pytorch::torchvision ==0.14.1
+  - pytorch::torchaudio ==0.13.1
+  - pytorch::pytorch-cuda =11.7
+  - trimesh # optional for diff-am, required for examples
+  - einops
+  - pip:
+    - cupy-cuda11x
