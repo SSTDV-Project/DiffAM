@@ -1,7 +1,10 @@
 DiffAM: Differentiable Appearance Modeling
 ===
+[[Preprint](https://sstdv-project.github.io/DiffAM/static/pdfs/manuscript.pdf)]
+[[Project Page](https://sstdv-project.github.io/DiffAM/)]
 [[SPIE MI 2024 Homepage](https://spie.org/medical-imaging/presentation/Vertebral-segmentation-without-training-using-differentiable-appearance-modeling-of-a/12926-93)]
 
+Official source code for SPIE Medical Image 2024 paper "Vertebral segmentation without training using differentiable appearance modeling of a deformable spine template."
 
 ## How to run
 ```bash
