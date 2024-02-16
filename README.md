@@ -6,6 +6,8 @@ DiffAM: Differentiable Appearance Modeling
 
 Official source code for SPIE Medical Image 2024 paper "Vertebral segmentation without training using differentiable appearance modeling of a deformable spine template."
 
+<img src="docs/static/images/method-overview-2.svg"/>
+
 ## How to run
 ```bash
 ### Clone the repository
