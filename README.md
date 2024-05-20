@@ -32,7 +32,22 @@ $ python test-sphere.py
 
 ## Citation
 
-TBA
+```bibtex
+@inproceedings{10.1117/12.3006602,
+  author = {Hyunsoo Kim and Jinah Park},
+  title = {{Vertebral segmentation without training using differentiable appearance modeling of a deformable spine template}},
+  volume = {12926},
+  booktitle = {Medical Imaging 2024: Image Processing},
+  editor = {Olivier Colliot and Jhimli Mitra},
+  organization = {International Society for Optics and Photonics},
+  publisher = {SPIE},
+  pages = {129262N},
+  keywords = {Deformable model, Differentiable appeance modeling, Differentiable signed distance operator, Spectral mesh optimization, Vertebral segmentation},
+  year = {2024},
+  doi = {10.1117/12.3006602},
+  URL = {https://doi.org/10.1117/12.3006602}
+}
+```
 
 ## Acknowledgement
 
