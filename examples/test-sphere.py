@@ -32,13 +32,13 @@ p = torch.randn((N, 3)).cuda()
 
 start = timeit.default_timer()
 dist = signed_distance(vf, p)[0]
-end = timeit.default_timer()
-elapsed_time = end - start
 
 analytic_dist = torch.linalg.norm(p, dim=-1) - 1
 
 error = dist - analytic_dist
 rmse = ((error ** 2).mean() ** 0.5).item()
+end = timeit.default_timer()
+elapsed_time = end - start
 
 print(f'{elapsed_time = :.6f} s')
 print(f'{rmse = :.6f}')
@@ -50,13 +50,13 @@ p = torch.randn((N, 3)).cuda()
 
 start = timeit.default_timer()
 dist = signed_distance(vf, p)[0]
-end = timeit.default_timer()
-elapsed_time = end - start
 
 analytic_dist = torch.linalg.norm(p, dim=-1) - 1
 
 error = dist - analytic_dist
 rmse = ((error ** 2).mean() ** 0.5).item()
+end = timeit.default_timer()
+elapsed_time = end - start
 
 print(f'{elapsed_time = :.6f} s')
 print(f'{rmse = :.6f}')
@@ -73,13 +73,13 @@ dist, w, cfi = signed_distance(vf, p)
 # cfi - i[N]: face index which the closest point lies
 cf = vf[cfi] # f[N,3,3]
 cp = (w[...,None] * cf).sum(dim=-2) # f[N, 3]
-end = timeit.default_timer()
-elapsed_time = end - start
 
 analytic_cp = p / torch.linalg.norm(p, dim=-1, keepdims=True)
 
 error = torch.linalg.norm(cp - analytic_cp, dim=-1)
 rmse = ((error ** 2).mean() ** 0.5).item()
+end = timeit.default_timer()
+elapsed_time = end - start
 
 print(f'{elapsed_time = :.6f} s')
 print(f'{rmse = :.6f}')
